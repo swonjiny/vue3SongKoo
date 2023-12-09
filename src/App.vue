@@ -38,11 +38,19 @@
       <v-icon class="mr-2">mdi-cog</v-icon>
       내 즐겨찾기 관리
     </v-system-bar>
-    <v-main class="bg-grey-lighten-1">
+    <v-main>
       <v-container>
         <RouterView />
       </v-container>
     </v-main>
+    <v-footer color="#375472" class="d-flex flex-column">
+      <div class="px-4 py-2 text-center w-100">
+        © 2012 - 2023 theqoo All rights reserved.
+      </div>
+      <div class="px-4 py-2 text-center w-100">
+        문의메일 : swonjiny@gmail.com
+      </div>
+    </v-footer>
   </v-app>
 
 
@@ -63,8 +71,8 @@
 </template>
 
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import { onUpdated, ref, watchEffect } from 'vue'
+import { RouterView } from 'vue-router'
+import { ref, watchEffect } from 'vue'
 
 const drawer = ref(true)
 

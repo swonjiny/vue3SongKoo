@@ -1,7 +1,7 @@
 @import './base.css';
 body {
     margin: 0;
-    background: #ecf0f1;
+    background: #fff;
     font-size: 13px;
 }
 body, table, input, textarea, select, button {
