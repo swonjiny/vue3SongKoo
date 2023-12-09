@@ -17,9 +17,9 @@
       <v-text-field
         variant="outlined"
         density="compact"
-        flat
+        :flat="ture"
         bg-color="#6c839f"
-        single-line
+        :single-line="true"
         prepend-inner-icon="mdi-magnify"
         placeholder="게시판 찾기"
         hide-details
@@ -78,8 +78,7 @@ const drawer = ref(true)
 
 window.addEventListener('resize' , () => {
   const width =  window.innerWidth
-  if(width < 800) drawer.value = false
-  else drawer.value = true
+  drawer.value = width >= 800;
 })
 
 watchEffect(()=>{
