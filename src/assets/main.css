@@ -1,0 +1,9 @@
+@import './base.css';
+body {
+    margin: 0;
+    background: #ecf0f1;
+    font-size: 13px;
+}
+body, table, input, textarea, select, button {
+    font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+}
